@@ -3,11 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: [
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'airbnb',
-  ],
+  extends: ['plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'airbnb'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -91,5 +87,6 @@ module.exports = {
     // We use Prettier formating and it is sometimes
     // not similar to ESLint
     indent: 'off',
+    'react/prop-types': 'off',
   },
 };
